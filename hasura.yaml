@@ -1,4 +1,5 @@
-description: Blank template for a Hasura project
-keywords: base, getting-started
-name: base
+description: A basic hello world web application written in Golang with IRIS, running
+  on Hasura.
+keywords: golang, go, iris, go-lang
+name: hello-golang-iris
 platformVersion: v0.15.3

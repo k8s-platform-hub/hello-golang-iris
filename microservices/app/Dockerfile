@@ -4,7 +4,7 @@ RUN apk add --no-cache git build-base
 
 RUN go get github.com/Masterminds/glide
 
-WORKDIR /go/src/github.com/hasura/quickstart-docker-git/go-iris
+WORKDIR /go/src/github.com/hasura/hello-golang-iris
 
 ADD glide.lock glide.lock
 
