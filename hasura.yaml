@@ -1,5 +1,4 @@
-description: A basic hello world web application written in Golang with IRIS, running
-  on Hasura.
+description: A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS.
 keywords: getting-started, golang, go, iris, go-lang
 name: hello-golang-iris
 platformVersion: v0.15.3
