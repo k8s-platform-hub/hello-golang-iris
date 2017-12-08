@@ -1,4 +1,5 @@
 description: A Hasura starter project with a ready to deploy Golang hello-world web app with IRIS.
 keywords: getting-started, golang, go, iris, go-lang
+media: {}
 name: hello-golang-iris
 platformVersion: v0.15.3
