@@ -1,8 +1,7 @@
 package main
 
 import (
-	"gopkg.in/kataras/iris.v6"
-	"gopkg.in/kataras/iris.v6/adaptors/httprouter"
+	"github.com/kataras/iris"
 )
 
 // Hello response structure
@@ -11,19 +10,12 @@ type Hello struct {
 }
 
 func main() {
-	app := iris.New()
-
-	app.Adapt(
-		iris.DevLogger(),
-		httprouter.New(),
-	)
-
+	app := iris.Default()
 	app.Get("/", index)
-
-	app.Listen(":8080")
+	app.Run(iris.Addr(":8080"))
 }
 
-func index(ctx *iris.Context) {
+func index(ctx iris.Context) {
 	m := Hello{"Welcome to Hasura"}
-	ctx.JSON(iris.StatusOK, m)
+	ctx.JSON(m)
 }
